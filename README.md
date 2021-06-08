@@ -1,8 +1,15 @@
 # Image-python-cv2-numpy
-Creating own image by coloring pixels, animation and image processing. 
+Creating own image by coloring pixels, doing animation and image processing. 
+
+Required libraries,
+```
+pip install numpy
+pip install opencv-python
+```
+
+Image is just an array, 2D (for gray) or 3D (for colorful), with each element representing a pixel. So, if we create a numpy array with all elements as [0,0,0] and then read this array as image with cv2, it will show us a black image because [0,0,0] represents black color. We can make any combination of BGR (cv2 use this format as default) at different parts of array and create our own image.
 
 🔵 Creating an image with numpy 3D array by drawing shapes and filling colors.
-
 ![image](https://user-images.githubusercontent.com/64186894/121126883-88018900-c846-11eb-824c-b53967bcf1d4.png)
 
 🔵 Creating Animation
